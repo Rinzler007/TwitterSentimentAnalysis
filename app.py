@@ -59,7 +59,6 @@ def result():
     plt.imshow(wordCloud, interpolation="bilinear")
     plt.axis('off')
     fig1 = plt.gcf()
-    plt.show()
     html_str1 = mpld3.fig_to_html(fig1)
 
     def getAnalysis(score):
@@ -78,7 +77,6 @@ def result():
     plt.xlabel('Polarity')
     plt.ylabel('Subjectivity')
     fig2 = plt.gcf()
-    plt.show()
     html_str2 = mpld3.fig_to_html(fig2)
     ptweets = df[df.Analysis == 'Positive']
     ptweets = ptweets['Tweets']
@@ -89,8 +87,16 @@ def result():
     ntweets = df[df.Analysis == 'Negative']
     ntweets = ntweets['Tweets']
     nper = round((ntweets.shape[0]/df.shape[0])*100, 1)
+    df['Analysis'].value_counts()
+    plt.figure(figsize=(8, 6))
+    plt.title('Sentiment Analysis')
+    plt.xlabel('Sentiment')
+    plt.ylabel('Counts')
+    df['Analysis'].value_counts().plot(kind='bar')
+    fig3 = plt.gcf()
+    html_str3 = mpld3.fig_to_html(fig3)
     proflink = "https://www.twitter.com/" + str(userID)
-    return render_template('result.html', pper=pper, neper=neper, nper=nper, html_str1=html_str1, html_str2=html_str2, userID=userID, proflink=proflink)
+    return render_template('result.html', pper=pper, neper=neper, nper=nper, html_str1=html_str1, html_str2=html_str2, html_str3=html_str3, userID=userID, proflink=proflink)
 
 
 @app.errorhandler(500)
