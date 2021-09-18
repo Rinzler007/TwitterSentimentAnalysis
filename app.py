@@ -78,15 +78,6 @@ def result():
     plt.ylabel('Subjectivity')
     fig2 = plt.gcf()
     html_str2 = mpld3.fig_to_html(fig2)
-    ptweets = df[df.Analysis == 'Positive']
-    ptweets = ptweets['Tweets']
-    pper = round((ptweets.shape[0]/df.shape[0])*100, 1)
-    neutweets = df[df.Analysis == 'Neutral']
-    neutweets = neutweets['Tweets']
-    neper = round((neutweets.shape[0]/df.shape[0])*100, 1)
-    ntweets = df[df.Analysis == 'Negative']
-    ntweets = ntweets['Tweets']
-    nper = round((ntweets.shape[0]/df.shape[0])*100, 1)
     df['Analysis'].value_counts()
     plt.figure(figsize=(8, 6))
     plt.title('Sentiment Analysis')
@@ -96,7 +87,7 @@ def result():
     fig3 = plt.gcf()
     html_str3 = mpld3.fig_to_html(fig3)
     proflink = "https://www.twitter.com/" + str(userID)
-    return render_template('result.html', pper=pper, neper=neper, nper=nper, html_str1=html_str1, html_str2=html_str2, html_str3=html_str3, userID=userID, proflink=proflink)
+    return render_template('result.html', html_str1=html_str1, html_str2=html_str2, html_str3=html_str3, userID=userID, proflink=proflink)
 
 
 @app.errorhandler(500)
