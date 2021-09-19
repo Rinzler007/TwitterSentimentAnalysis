@@ -16,12 +16,12 @@
 
 		<!-- Header -->
 		<header id="header" class="alt">
-			<h1 style="color: black;"><strong><a href="index.html">TelloTweet</a></strong></h1>
+			<h1><strong style="color: black;"><a href="index.html">TelloTweet</a></strong></h1>
 			<nav id="nav">
 				<ul>
-					<li style="color: black;"><a href="#banner">Home</a></li>
-					<li style="color: black;"><a href="#three">About</a></li>
-					<li style="color: black;"><a href="#four">Contact</a></li>
+					<li><a href="#banner" style="color: black;">Home</a></li>
+					<li><a href="#three" style="color: black;">About</a></li>
+					<li><a href="#four" style="color: black;">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -38,7 +38,7 @@
 							target="blank"><span style="color: black;">@{{ userID }}<span></a></p>
 				</header>
 
-				<h2>Sentiment Analysis</h2>
+				<h2 style="text-align: center;">Sentiment Analysis</h2>
 				<!-- <div class="analysis" style="width: 500px; margin: 60px auto;">
 					<li style="margin: 20px  0; list-style: none;">
 						<h4>Positive</h4><span class="bar"
@@ -64,15 +64,17 @@
 				</div> -->
 
 				<div style="width: 800px;height: 700px;margin-left: 100px;">
+					<p style="color: black; text-align: center;"> 0,1,2 denotes postive, neutral, negative respectively.
+					</p>
 					{{ html_str3 | safe }}
 				</div>
 
-				<h2>Word Cloud</h2>
+				<h2 style="text-align: center;">Word Cloud</h2>
 				<div style="width: 800px;height: 700px;margin-left: 100px;">
 					{{ html_str1 | safe }}
 				</div>
 				<br>
-				<h2>Subjectivity VS Polarity</h2>
+				<h2 style="text-align: center;">Subjectivity VS Polarity</h2>
 				<div style="width: 800px;height: 700px;margin-left: 100px;">
 					{{ html_str2 | safe }}
 				</div>
