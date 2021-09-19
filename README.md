@@ -1,11 +1,11 @@
-# Tweetilyse
+# TelloTweet
 
 ## Website
-I've deployed this app on Heroku and the link is given below:
+This web app is hosted on heroku and can be viewed from the link given below :
 
-### Link: [https://tweetilyse.herokuapp.com/](https://tweetilyse.herokuapp.com/) or [https://bit.ly/Tweetilyse](https://bit.ly/Tweetilyse)
+### Link: [https://twitsentifinal.herokuapp.com/](https://twitsentifinal.herokuapp.com/)
 
-Tweetilyse is a simple web app to analyse tweets from a given user
+TelloTweet is a web app integrated on Flask Framework which gives a sentiment analysis of a Twitter ID provided as an input. This web app functions with the help of Tweepy API, TextBlob and NLP libraries which collects, filter and calculates the subjectivity and polarity of each tweet made by the user and provides with a graphical analysis of the insights found. 
 
 ## Installation
 
