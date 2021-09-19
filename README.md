@@ -9,7 +9,7 @@ TelloTweet is a web app integrated on Flask Framework which gives a sentiment an
 
 ## Flowchart of Methodology
 
-IPython.display.Image("/Users/harshdas/Desktop/TwitterSentimentAnalysis/TelloTweet.png")
+![Flowchart](/TelloTweet.png)
 
 ## Installation
 
