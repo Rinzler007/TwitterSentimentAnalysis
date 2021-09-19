@@ -12,7 +12,7 @@
 		<link rel="manifest" href="../static/images/site.webmanifest">
 	</head>
 
-	<body>
+	<body class="landing">
 
 		<!-- Header -->
 		<header id="header" class="alt">
@@ -45,30 +45,6 @@
 				</header>
 
 				<h2 style="text-align: center;">Sentiment Analysis</h2>
-				<!-- <div class="analysis" style="width: 500px; margin: 60px auto;">
-					<li style="margin: 20px  0; list-style: none;">
-						<h4>Positive</h4><span class="bar"
-							style="background: #353b48; display: block; height: 7px; border: 1px solid rgba(0,0,0,0.3); border-radius: 3px; overflow: hidden; box-shadow: 0 0 10px #2187e7b3;"><span
-								class="positive"
-								style="height: 5px; float: left; background: #2187e7; width: '{{ pper }}';"></span></span>
-					</li>
-					<li style="margin: 20px  0; list-style: none;">
-						<h4>Neutral</h4>
-						<span class="bar"
-							style="background: #353b48; display: block; height: 7px; border: 1px solid rgba(0,0,0,0.3); border-radius: 3px; overflow: hidden; box-shadow: 0 0 10px #2187e7b3;">
-							<span class="neutral"
-								style="height: 5px; float: left; background: #2187e7; width: '{{ neper }}';">
-							</span>
-						</span>
-					</li>
-					<li style="margin: 20px  0; list-style: none;">
-						<h4>Negative</h4><span class="bar"
-							style="background: #353b48; display: block; height: 7px; border: 1px solid rgba(0,0,0,0.3); border-radius: 3px; overflow: hidden; box-shadow: 0 0 10px #2187e7b3;"><span
-								class="negative"
-								style="height: 5px; float: left; background: #2187e7; width: '{{ nper }}';"></span></span>
-					</li>
-				</div> -->
-
 				<div style="width: 800px;height: 700px; text-align: center;">
 					<p style="color: black; text-align: center;"> 0,1,2 denotes postive, neutral, negative respectively.
 					</p>
@@ -76,12 +52,12 @@
 				</div>
 
 				<h2 style="text-align: center;">Word Cloud</h2>
-				<div style="width: 800px;height: 700px;margin-left: 100px;">
+				<div style="width: 800px;height: 700px; text-align: center;">
 					{{ html_str1 | safe }}
 				</div>
 				<br>
 				<h2 style="text-align: center;">Subjectivity VS Polarity</h2>
-				<div style="width: 800px;height: 700px;margin-left: 100px;">
+				<div style="width: 800px;height: 700px;text-align: center;">
 					{{ html_str2 | safe }}
 				</div>
 
