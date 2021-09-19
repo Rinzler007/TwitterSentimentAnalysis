@@ -20,10 +20,10 @@ def hello_world():
 @app.route('/result', methods=['POST', 'GET'])
 def result():
     userID = request.form['username']
-    consumerKey = str(os.environ['consumerKey'])
-    consumerSecret = str(os.environ['consumerSecret'])
-    accessToken = str(os.environ['accessToken'])
-    accessTokenSecret = str(os.environ['accessTokenSecret'])
+    consumerKey = "zf4BZhG95UuNQ8UoILvsI3qAw"
+    consumerSecret = "uQahBfCxzvyrYMCll5tsCPUxECozDIejJVaFGb0kIZb8MCcgvb"
+    accessToken = "3303035127-lNip495SGwrTfG3qS0bdDvZMsvmCSAW8Qp9j5Cy"
+    accessTokenSecret = "HkO6t3r9WwbLzTlu16ydYBfGPsIgBbFcZs2YqDZFtmF5B"
 
     authenticate = tweepy.OAuthHandler(consumerKey, consumerSecret)
 
