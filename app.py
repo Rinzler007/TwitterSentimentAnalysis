@@ -19,7 +19,7 @@ def hello_world():
 
 @app.route('/result', methods=['POST', 'GET'])
 def result():
-    # userID = request.form['username']
+    userID = request.form['username']
     # consumerKey = str(os.environ['consumerKey'])
     # consumerSecret = str(os.environ['consumerKey'])
     # accessToken = str(os.environ['consumerKey'])
