@@ -16,7 +16,7 @@
 
 		<!-- Header -->
 		<header id="header" class="alt">
-			<h1><strong style="color: black;"><a href="index.html">TelloTweet</a></strong></h1>
+			<h1><strong><a href="index.html" style="color: black;">TelloTweet</a></strong></h1>
 			<nav id="nav">
 				<ul>
 					<li><a href="#banner" style="color: black;">Home</a></li>
@@ -32,10 +32,11 @@
 		<section id="main" class="wrapper">
 			<div class="container">
 
-				<header class="major special">
-					<h2>Results</h2>
-					<p>The following are our derivations for <a href="{{ proflink }}" style="text-decoration: none;"
-							target="blank"><span style="color: black;">@{{ userID }}<span></a></p>
+				<header class="major special" style="text-align: center;">
+					<h2 style="text-align: center;">Results</h2>
+					<p style="text-align: center;">The following are our derivations for <a href="{{ proflink }}"
+							style="text-decoration: none;" target="blank"><span
+								style="color: black;">@{{ userID }}<span></a></p>
 				</header>
 
 				<h2 style="text-align: center;">Sentiment Analysis</h2>
@@ -63,7 +64,7 @@
 					</li>
 				</div> -->
 
-				<div style="width: 800px;height: 700px;margin-left: 100px;">
+				<div style="width: 800px;height: 700px; text-align: center;">
 					<p style="color: black; text-align: center;"> 0,1,2 denotes postive, neutral, negative respectively.
 					</p>
 					{{ html_str3 | safe }}
