@@ -11,6 +11,18 @@ TelloTweet is a web app integrated on Flask Framework which gives a sentiment an
 
 ![Flowchart](/TelloTweet.png)
 
+## I/O Screenshots
+
+### Input 
+
+![Flowchart](/1.png)
+
+### Output
+
+![Flowchart](/2.png)
+![Flowchart](/3.png)
+![Flowchart](/4.png)
+
 ## Installation
 
 1. Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required Libraries.
