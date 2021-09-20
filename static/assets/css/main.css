@@ -2814,6 +2814,7 @@ header.major p {
   .wordcloud {
     width: 800px;
     height: 700px;
+    text-align: center;
   }
 
   .scatter {
@@ -2833,19 +2834,20 @@ header.major p {
   }
 
   .bargraph {
-    width: 685px;
-    height: 600px;
+    width: 342px;
+    height: 300px;
     text-align: center;
   }
 
   .wordcloud {
-    width: 685px;
-    height: 600px;
+    width: 342px;
+    height: 300px;
+    text-align: center;
   }
 
   .scatter {
-    width: 685px;
-    height: 600px;
+    width: 342px;
+    height: 300px;
     text-align: center;
   }
 }
@@ -2856,19 +2858,20 @@ header.major p {
   }
 
   .bargraph {
-    width: 342px;
-    height: 300px;
+    width: 114px;
+    height: 100px;
     text-align: center;
   }
 
   .wordcloud {
-    width: 342px;
-    height: 300px;
+    width: 114px;
+    height: 100px;
+    text-align: center;
   }
 
   .scatter {
-    width: 342px;
-    height: 300px;
+    width: 114px;
+    height: 100px;
     text-align: center;
   }
 }
@@ -2876,6 +2879,24 @@ header.major p {
 @media screen and (max-width: 480px) {
   header.major h2 {
     font-size: 1.75em;
+  }
+
+  .bargraph {
+    width: 34px;
+    height: 30px;
+    text-align: center;
+  }
+
+  .wordcloud {
+    width: 34px;
+    height: 30px;
+    text-align: center;
+  }
+
+  .scatter {
+    width: 34px;
+    height: 30px;
+    text-align: center;
   }
 }
 
