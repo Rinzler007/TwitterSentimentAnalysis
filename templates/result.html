@@ -10,6 +10,25 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon-16x16.png">
 		<link rel="manifest" href="../static/images/site.webmanifest">
+		<style>
+			.bargraph {
+				width: 100%;
+				max-width: 400px;
+				height: auto;
+			}
+
+			.wordcloud {
+				width: 100%;
+				max-width: 400px;
+				height: auto;
+			}
+
+			.scatter {
+				width: 100%;
+				max-width: 400px;
+				height: auto;
+			}
+		</style>
 	</head>
 
 	<body class="landing">
@@ -50,7 +69,7 @@
   margin: 0 0 1.5em 0;
   text-transform: uppercase;"> 0,1,2 denotes postive, neutral, negative respectively.
 				</p>
-				<div class="bargraph">
+				<div class="bargraph" width="600" height="400">
 					{{ html_str3 | safe }}
 				</div>
 
@@ -60,7 +79,7 @@
   text-transform: uppercase;"> A word cloud is an image composed of words used in a
 					particular text
 					or subject, in which the size of each word indicates its frequency or importance.</p>
-				<div class="wordcloud">
+				<div class="wordcloud" width="600" height="400">
 					{{ html_str1 | safe }}
 				</div>
 				<br>
@@ -72,7 +91,7 @@
 					judgment whereas Polarity is float which lies in the range of [-1,1] where 1 means positive
 					statement, 0 means neutral statement and -1 means
 					a negative statement.</p>
-				<div class="scatter">
+				<div class="scatter" width="600" height="400">
 					{{ html_str2 | safe }}
 				</div>
 
