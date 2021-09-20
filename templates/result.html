@@ -45,19 +45,34 @@
 				</header>
 
 				<h2 style="text-align: center;">Sentiment Analysis</h2>
-				<div style="width: 800px;height: 700px; text-align: center;">
-					<p style="color: black; text-align: center;"> 0,1,2 denotes postive, neutral, negative respectively.
+				<div class="bargraph">
+					<p style="color: black; text-align: center;
+  position: relative;
+  margin: 0 0 1.5em 0;
+  text-transform: uppercase;"> 0,1,2 denotes postive, neutral, negative respectively.
 					</p>
 					{{ html_str3 | safe }}
 				</div>
 
 				<h2 style="text-align: center;">Word Cloud</h2>
-				<div style="width: 800px;height: 700px;">
+				<div class="wordcloud">
+					<p style="color: black; text-align: center; position: relative;
+  margin: 0 0 1.5em 0;
+  text-transform: uppercase;"> A word cloud is an image composed of words used in a
+						particular text
+						or subject, in which the size of each word indicates its frequency or importance.</p>
 					{{ html_str1 | safe }}
 				</div>
 				<br>
 				<h2 style="text-align: center;">Subjectivity VS Polarity</h2>
-				<div style="width: 800px;height: 700px;text-align: center;">
+				<p style="color: black; text-align: center; position: relative;
+  margin: 0 0 1.5em 0;
+  text-transform: uppercase;"> Subjective sentences generally refer to personal opinion,
+					emotion or
+					judgment whereas Polarity is float which lies in the range of [-1,1] where 1 means positive
+					statement, 0 means neutral statement and -1 means
+					a negative statement.</p>
+				<div class="scatter">
 					{{ html_str2 | safe }}
 				</div>
 
@@ -71,7 +86,7 @@
 					<p>To know more about this project</p>
 				</header>
 				<ul class="actions">
-					<li><a href="mailto:dev.harshdasrox007@gmail.com" class="button special big">Get In Touch</a></li>
+					<li><a href="mailto:harshdasrox007@gmail.com" class="button special big">Get In Touch</a></li>
 				</ul>
 			</div>
 		</section>

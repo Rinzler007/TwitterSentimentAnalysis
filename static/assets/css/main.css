@@ -2804,6 +2804,23 @@ header.major p {
   header.major p {
     font-size: 1.3em;
   }
+
+  .bargraph {
+    width: 800px;
+    height: 700px;
+    text-align: center;
+  }
+
+  .wordcloud {
+    width: 800px;
+    height: 700px;
+  }
+
+  .scatter {
+    width: 800px;
+    height: 700px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -2814,11 +2831,45 @@ header.major p {
   header.major p {
     font-size: 1.1em;
   }
+
+  .bargraph {
+    width: 685px;
+    height: 600px;
+    text-align: center;
+  }
+
+  .wordcloud {
+    width: 685px;
+    height: 600px;
+  }
+
+  .scatter {
+    width: 685px;
+    height: 600px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 736px) {
   header.major {
     margin-bottom: 2em;
+  }
+
+  .bargraph {
+    width: 342px;
+    height: 300px;
+    text-align: center;
+  }
+
+  .wordcloud {
+    width: 342px;
+    height: 300px;
+  }
+
+  .scatter {
+    width: 342px;
+    height: 300px;
+    text-align: center;
   }
 }
 
