@@ -45,22 +45,22 @@
 				</header>
 
 				<h2 style="text-align: center;">Sentiment Analysis</h2>
-				<div class="bargraph">
-					<p style="color: black; text-align: center;
+				<p style="color: black; text-align: center;
   position: relative;
   margin: 0 0 1.5em 0;
   text-transform: uppercase;"> 0,1,2 denotes postive, neutral, negative respectively.
-					</p>
+				</p>
+				<div class="bargraph">
 					{{ html_str3 | safe }}
 				</div>
 
 				<h2 style="text-align: center;">Word Cloud</h2>
-				<div class="wordcloud">
-					<p style="color: black; text-align: center; position: relative;
+				<p style="color: black; text-align: center; position: relative;
   margin: 0 0 1.5em 0;
   text-transform: uppercase;"> A word cloud is an image composed of words used in a
-						particular text
-						or subject, in which the size of each word indicates its frequency or importance.</p>
+					particular text
+					or subject, in which the size of each word indicates its frequency or importance.</p>
+				<div class="wordcloud">
 					{{ html_str1 | safe }}
 				</div>
 				<br>
